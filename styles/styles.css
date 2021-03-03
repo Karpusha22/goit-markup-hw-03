@@ -80,6 +80,8 @@ img {
 
 .logo {
     text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 ul {
@@ -95,14 +97,20 @@ ul {
 .main-header .container {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
     justify-content: space-between;
+    /* background-color: wheat; */
 }
 
 .header-menu { 
     display: flex;
     align-items: center;
-}
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* background-color: greenyellow; */
+} 
 
 .header-nav .nav-link:not(:last-child) {
     margin-right: 50px;
@@ -116,11 +124,12 @@ ul {
 .header-contacts {
     display: flex;
     align-items: center;
+    /* background-color: greenyellow; */
 }
 
 .header-contacts 
 .header-contacts:not(:last-child){
-    margin: 50px;
+    margin-right: 50px;
 }
 
 .header-nav .link{
@@ -396,11 +405,13 @@ ul {
     padding: 60px 0;
     display: flex;
     flex-direction: column;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
 }
 
 .footer-logo{
+    display: flex;
     text-decoration: none;
+    /* outline: 2px solid green; */
     
 }
 .logoblue{
@@ -421,6 +432,7 @@ ul {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    margin-left: 215px;
     
 }
 
@@ -435,6 +447,10 @@ ul {
     cursor: pointer;
 }
 /* footer info */
+
+.footer-container {
+    margin-left: 215px;
+}
 .footer-address{
     Font-family: 'Roboto', sans-serif;
     color: var(--white);
@@ -443,6 +459,7 @@ ul {
     letter-spacing: 0.03em;
     font-style: normal;
     font-weight: normal;
+    /* outline: 2px solid red; */
 }
 
 .footer-contacts .link{
@@ -453,6 +470,7 @@ ul {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration: none; 
+    /* outline: 2px solid purple; */
 }
 
 .footer-item {
@@ -467,6 +485,31 @@ ul {
 
 /* portfolio page */
 
+
+.filters {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+    /* outline: 2px solid red; */
+} 
+
+.filter{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center; 
+}
+
+.filter-item {
+    align-content: center;
+
+}
+.filter-item:not(:last-child){
+    margin-right: 8px;
+}
+
 .filter-btn{
     color: var(--secondarytext);
     font-family: 'Roboto', sans-serif;  
@@ -475,24 +518,28 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--backgroundbuttons);
-    height: 26px;
+    
+    border-radius: 4px;
+    padding: 6px 22px;
+    outline: none;
     border: none;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    /* outline: 2px solid green; */
 }
 
-.filter-btn-current{
+.filter-btn:active,
+.filter-btn:hover{
     color: var(--white);  
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: var(--accent);
-    height: 26px;
-    border: none;
+    background-color: var(--accent); 
 }
 
 .filter-btn,
-.filter-btn-current,
 .main-button{
     cursor: pointer;
 }
@@ -507,8 +554,25 @@ ul {
     text-decoration: none;
 }
 
-.portfolio{
+
+/* portfolio list  */
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+    justify-content: center;
+
+    /* background-color: aquamarine;  */
+
+}
+
+.filter-container{
     list-style: none;
+    /* background-color: aquamarine; */
 }
 
 .portfolio-subtitle{
@@ -518,6 +582,14 @@ ul {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
+    margin-bottom: 4px;
+    text-align: left;
+    padding-left: 24px;
+    max-width: 370px; 
+
+    /* outline: 2px solid purple; */
 }
 
 .portfolio-text{
@@ -526,7 +598,39 @@ ul {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
+
+    text-align: left;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    max-width: 370px;  
+
+    /* outline: 2px solid purple; */
 }
+
+.porfolio-item{
+    background: var(--backgroundheader);
+    border: 1px solid #EEEEE;
+    box-sizing: border-box;
+    max-width: 370px;
+    border: 1px solid purple;
+
+
+    /* outline: 2px solid purple; */
+}
+
+/* .portfolio-listing {
+    margin-left: -30px;
+    margin-top: -30px;
+} */
+
+.portfolio-img {
+    display: block;
+}
+
+.portfolio-item {
+    flex-basis: calc(100% / 3- 30px);
+}
+
 
 .portfolio-listing :hover,
 .portfolio-listing :focus{
