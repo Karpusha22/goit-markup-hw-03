@@ -489,7 +489,6 @@ ul {
 
     padding-left: 0px;
     padding-right: 0px;
-
 }
 
 .filters {
@@ -547,6 +546,14 @@ ul {
 }
 
 .portfolio-list {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
     display: flex; 
     flex-wrap: wrap;
     
