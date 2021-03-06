@@ -238,6 +238,39 @@ ul {
 
     /* outline: 2px solid blueviolet; */
 }
+/* .filter-btn, 
+.filter-btn:active{
+    color: var(--secondarytext);
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--backgroundbuttons);
+    
+    border-radius: 4px;
+    padding: 6px 22px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.filter-btn:active,
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--white);  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--accent); 
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    text-decoration: none;
+} */
 
 .main-button{
     color: var(--white);
@@ -247,8 +280,8 @@ ul {
     min-width: 200px;
     background-color: var(--accent);
     
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; */
     
     margin-top: 30px;
     
@@ -256,8 +289,13 @@ ul {
     
 }
 
-.main-button:focus{
-    color: var(--accent);
+.main-button:focus,
+.main-button:hover,
+.main-button:active{
+    background-color: #188CE8;
+    /* color: var(--white); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     cursor: pointer;
 }
 /* main list */
@@ -547,7 +585,8 @@ ul {
     margin-right: 8px;
 }
 
-.filter-btn{
+.filter-btn, 
+.filter-btn:active{
     color: var(--secondarytext);
     font-family: 'Roboto', sans-serif;  
     font-weight: 500;
