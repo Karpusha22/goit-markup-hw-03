@@ -538,14 +538,16 @@ ul {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration: none; 
-    display: block;
-    margin-top: 9px;
-    /* outline: 2px solid purple; */
 }
 
+.footer-item:not(:first-child){
+    margin-top: 9px;
+}
 .footer-contacts { 
+    display: block;
     list-style: none;
-    /* margin-top: 9px; */
+    margin-top: 9px;
+   
 }
 
 
